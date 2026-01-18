@@ -1,0 +1,8 @@
+{
+  "name": "SBIR IA",
+  "description": "A production-ready social media management platform for Facebook Pages, Instagram Business, and WhatsApp Cloud API, featuring automated AI replies, unified inbox, and post scheduling.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

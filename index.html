@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaFlow Pro | Unified Workspace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        border: 'hsl(var(--border))',
+                        background: 'hsl(var(--background))',
+                        foreground: 'hsl(var(--foreground))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --background: 0 0% 100%;
+            --foreground: 222.2 84% 4.9%;
+            --border: 214.3 31.8% 91.4%;
+        }
+
+        .dark {
+            --background: 222.2 84% 4.9%;
+            --foreground: 210 40% 98%;
+            --border: 217.2 32.6% 17.5%;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 11px;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* High-fidelity Custom Scrollbars */
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 10px; }
+        .dark ::-webkit-scrollbar-thumb { background: #374151; }
+
+        .sidebar-module { background-color: #000000; }
+        .sidebar-org { background-color: #f9fafb; }
+        .dark .sidebar-org { background-color: #111827; }
+        
+        .card-pro {
+            background-color: #ffffff;
+            border: 1px solid #f3f4f6;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .dark .card-pro {
+            background-color: #1f2937;
+            border-color: #374151;
+        }
+
+        .input-pro {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            padding: 6px 10px;
+            font-size: 11px;
+            outline: none;
+        }
+        .dark .input-pro {
+            background-color: #111827;
+            border-color: #374151;
+            color: #f9fafb;
+        }
+
+        .btn-primary {
+            background-color: #000000;
+            color: #ffffff;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: opacity 0.2s;
+        }
+        .dark .btn-primary {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .datatable-row:hover { background-color: #f9fafb; }
+        .dark .datatable-row:hover { background-color: #1f2937; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body class="bg-background text-foreground transition-colors duration-300">
+    <div id="root"></div>
+</body>
+</html>
